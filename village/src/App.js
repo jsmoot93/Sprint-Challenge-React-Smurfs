@@ -31,17 +31,22 @@ class App extends Component {
     })
   }
 
+  
+
   render() {
     return (
       <div className="App">
+        <div id="clouds"></div>
+        <div id="ground"></div>
         <nav>
-          <NavLink exact to={`/`} activeClassName="active-nav">
+          <NavLink exact to={`/`} className="active-nav">
             <p>Home</p>
           </NavLink>
-          <NavLink to={`/smurf-form`} activeClassName="active-nav">
+          <NavLink to={`/smurf-form`} className="active-nav">
             <p>Add Smurf</p>
           </NavLink>
         </nav>
+        <div className="second-border"></div>
         <Route path="/" exact render={ownProps => <Smurfs {...ownProps} smurfs={this.state.smurfs} />} />
         <Route path="/smurf-form" render={ownProps => <SmurfForm {...ownProps} addSmurf={this.addSmurf} />} />
       </div>
