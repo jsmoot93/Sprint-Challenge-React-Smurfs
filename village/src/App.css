@@ -1,3 +1,35 @@
-.App {
-  text-align: center;
+html {
+  height:100%;
+  background:#63D0FF;
 }
+
+body{
+  margin:0;
+  padding:0;
+  background: url(https://www.smurfexperience.com/wp-content/themes/smurfexperience/assets/images/grand-schtroumpf.png) center no-repeat fixed;
+  height:100%;
+}
+
+.App {
+  align-items: center;
+  text-align: center;
+  position:relative;
+  width:100%;
+  height:100%;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.active-nav {
+  margin: 0 20px;
+}
+
+.second-border {
+  margin: 5px 0;
+  border-bottom: 1px solid red;
+}
+
